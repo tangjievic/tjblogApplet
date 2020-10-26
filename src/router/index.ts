@@ -8,10 +8,12 @@ const routes = [
   {
     path: '/',
     name: 'home',
+    component: () => import(/* webpackChunkName: "about" */ '../views/index/GuidePage.vue')
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/obmod',
+    name: 'obmod',
+    component:() => import('../views/designmoe/ObserverMod.vue')
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -20,7 +22,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  //routes
+  routes
 })
 
 export default router
