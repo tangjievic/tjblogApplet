@@ -2,7 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import './assets/reset/reset.css'
+import './assets/css/bootstrap.min.css';
+import './assets/css/icons.min.css';
+import './assets/css/app.css';
 import {Button,Input,Form, Menu,Layout,Icon,message,Tabs,Select,Modal,
 Breadcrumb,Table,Alert,Popconfirm,Radio,Row,Col,Divider} from 'ant-design-vue'
 
