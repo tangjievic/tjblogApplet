@@ -1,7 +1,7 @@
 <template>
 <div id="app">
     <main-layout>
-    <router-view></router-view>
+        <router-view></router-view>
     </main-layout>
 </div>
 </template>
@@ -18,4 +18,8 @@ export default Vue.extend({
 
 <style lang="less">
 @import url('./tool/code.less');
+
+.ant-message .anticon {
+    top: -2.3px !important;
+}
 </style>

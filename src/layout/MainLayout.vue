@@ -1,18 +1,25 @@
 <style lang="less">
-.page_view{
-	&::before{
-		content: '';
-		display: block;
-		height: 90px;
-	}
+.page_view {
+    &::before {
+        content: '';
+        display: block;
+        height: 90px;
+    }
 }
-.logo.logo-dark{
-	color: #2bb9ad;
-	font-size:22px ;
+
+.logo.logo-dark {
+    color: #2bb9ad;
+    font-size: 22px;
 }
-.navbar-header{
-	max-width: 1130px;
+
+.navbar-header {
+    max-width: 1130px;
+
+    .collospa {
+        display: none;
+    }
 }
+
 .navbar-header .nav-actived::after {
     content: '';
     display: block;
@@ -22,18 +29,22 @@
     width: 100%;
     border-top: 4px solid #2bb9ad;
 }
-@media screen and (max-width: 1130px) {
-    .navbar-header{
-		max-width: auto;
-	}
+
+@media screen and (max-width: 960px) {
+    .navbar-header {
+        max-width: auto;
+
+        .collospa {
+            display: block;
+        }
+    }
 }
 
 @media (max-width: 380px) {
-.navbar-brand-box {
-    display: block!important;
+    .navbar-brand-box {
+        display: block !important;
+    }
 }
-}
-
 </style>
 
 <template>
@@ -47,12 +58,14 @@
                         <span class="logo-lg">TANGJIE-BLOG</span>
                     </a>
                 </div>
+                <button type="button" class="btn btn-sm px-3 font-size-24 header-item collospa" id="vertical-menu-btn">
+                    <i class="ri-menu-2-line align-middle"></i>
+                </button>
             </div>
 
             <div class="d-flex">
-
                 <div class="dropdown d-sm-inline-block nav-actived" style="position: relative;">
-                    <button type="button" class="btn header-item waves-effect" >前端体系构建专辑</button>
+                    <button type="button" class="btn header-item waves-effect">前端体系构建专辑</button>
                 </div>
 
                 <div class="dropdown d-inline-block">
@@ -109,14 +122,37 @@
             </div>
         </div>
     </header>
-    <div><slot></slot></div>
-    
+    <div>
+        <slot></slot>
+    </div>
+
 </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({
+const $ = (window as any).$;
 
+function initLeftMenuCollapse() {
+    $('#vertical-menu-btn').on('click', function (event) {
+        event.preventDefault();
+        $('body').toggleClass('sidebar-enable');
+        if ($(window).width() >= 992) {
+            $('body').toggleClass('vertical-collpsed');
+        } else {
+            $('body').removeClass('vertical-collpsed');
+        }
+    });
+    $('body,html').click(function (e) {
+        var container = $("#vertical-menu-btn");
+        if (!container.is(e.target) && container.has(e.target).length === 0 && !(e.target).closest('div.vertical-menu')) {
+            $("body").removeClass("sidebar-enable");
+        }
+    });
+}
+export default Vue.extend({
+    mounted() {
+        initLeftMenuCollapse();
+    }
 })
 </script>
