@@ -11,19 +11,12 @@
                 <ul class="metismenu list-unstyled" id="side-menu">
                     <li class="menu-title">{{moduletitle}}</li>
 
-                    <li v-for="(item,index) in menuarray" :key="index" :class="[item.name===selectmenu?'mm-active':'']">
-                        <a href="index.html" :class="['waves-effect',item.name===selectmenu?'active':'']">
+                    <li v-for="(item,index) in menuarray" :key="index" :class="[item.name===selectmenu.name?'mm-active':'']">
+                        <a href="index.html" :class="['waves-effect',item.name===selectmenu.name?'active':'']">
                             <i :class="item.icon"></i>
                             <span>{{item.title}}</span>
                         </a>
                     </li>
-
-                    <!--<li>
-                                <a href="calendar.html" class=" waves-effect">
-                                    <i class="ri-calendar-2-line"></i>
-                                    <span>Calendar</span>
-                                </a>
-                            </li>-->
                 </ul>
             </div>
             <!-- Sidebar -->
@@ -37,12 +30,12 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-0">观察者模式</h4>
+                            <h4 class="mb-0">{{selectmenu.title}}</h4>
 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item" @click="goGuidPage"><span>菜单选择页</span></li>
-                                    <li class="breadcrumb-item active">设计模式</li>
+                                    <li class="breadcrumb-item active">{{selectmenu.title}}</li>
                                 </ol>
                             </div>
 
@@ -80,7 +73,7 @@ export default Vue.extend({
     props: {
         moduletitle: String,
         menuarray: Array,
-        selectmenu: String
+        selectmenu: Object
     },
     methods: {
         goGuidPage() {

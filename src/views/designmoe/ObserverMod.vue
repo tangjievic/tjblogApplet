@@ -1,5 +1,5 @@
 <template>
-<code-edite moduletitle="设计模式" selectmenu="obmod" :menuarray="menudata">
+<code-edite moduletitle="设计模式" :selectmenu="obmod" :menuarray="menudata">
     <markdown-body :htmlstirng="textdata[0]"></markdown-body>
     <div class="obs_box">
         <a-button type="primary" style="margin-right:10px" @click="giveToHang">给小黄发布摸鱼任务</a-button>
@@ -71,7 +71,11 @@ export default Vue.extend({
     data() {
         return {
             textdata: data,
-            menudata: Menudata
+            menudata: Menudata,
+            obmod:{
+                name:'obmod',
+                title:'观察者模式'
+            }
         }
     },
     methods: {
