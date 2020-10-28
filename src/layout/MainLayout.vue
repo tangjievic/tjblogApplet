@@ -134,7 +134,7 @@ import Vue from 'vue'
 const $ = (window as any).$;
 
 function initLeftMenuCollapse() {
-    $('#vertical-menu-btn').on('click', function (event) {
+    $('#vertical-menu-btn').on('click', function (event:any) {
         event.preventDefault();
         $('body').toggleClass('sidebar-enable');
         if ($(window).width() >= 992) {
@@ -143,7 +143,7 @@ function initLeftMenuCollapse() {
             $('body').removeClass('vertical-collpsed');
         }
     });
-    $('body,html').click(function (e) {
+    $('body,html').click(function (e:any) {
         var container = $("#vertical-menu-btn");
         if (!container.is(e.target) && container.has(e.target).length === 0 && !(e.target).closest('div.vertical-menu')) {
             $("body").removeClass("sidebar-enable");

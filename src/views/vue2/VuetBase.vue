@@ -13,7 +13,7 @@
 import Vue from 'vue'
 import CodeEdite from '../../layout/CodeEdite.vue';
 import MarkdownBody from '../../components/MarkdownBody.vue';
-import data from '../../markdownts/vue2/vue2base';
+import datas from '../../markdownts/vue2/vue2base';
 import Menudata from './menudata';
 import test from '../../components/test.vue';
 
@@ -24,16 +24,6 @@ Vue.component('test-component', {
         return h(test)
     },
 })
-
-Vue.directive('permission', {
-    inserted(el) {
-        console.log(el, 'xxxx')
-        if (this.role !== 'admin') {
-            el.parentElement.removeChild(el)
-        }
-    }
-})
-
 export default Vue.extend({
     components: {
         CodeEdite,
@@ -41,7 +31,7 @@ export default Vue.extend({
     },
     data() {
         return {
-            textdata: data,
+            textdata: datas as any[],
             menudata: Menudata,
             role: 'admin',
             vue2base: {

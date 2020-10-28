@@ -17,7 +17,7 @@ export default Vue.extend({
     },
     data() {
         return {
-            textdata: data,
+            textdata: data as any,
             menudata: Menudata,
             selectmenu: {
                 name: 'algbase1',

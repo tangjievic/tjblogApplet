@@ -20,11 +20,11 @@ import Menudata from './menudata';
 
 interface Teacher {
     obj: TeacherAttrs;
-    actions: (msg) => void
+    actions: (msg) => any
 }
 interface TeacherAttrs {
     name: string;
-    teach: (msg: string) => void
+    teach: (msg: string) => any
 }
 const schoolMaster = {
     teacher: new Set() as Set < Teacher > ,
@@ -57,17 +57,13 @@ const tacheterTwo = {
     }
 }
 
-schoolMaster.addObs(tacheterOne, () => {
-    Vue.prototype.$message.error('小黄，你现在要开始摸鱼了')
+schoolMaster.addObs(tacheterOne, (msg:any) => {
+    Vue.prototype.$message.error('小黄，你现在要开始摸鱼了'+msg)
 })
 
-schoolMaster.addObs(tacheterTwo, tacheterTwo.teach)
-
+schoolMaster.addObs(tacheterTwo, (tacheterTwo as any).teach);
+// 主要进程
 export default Vue.extend({
-    components: {
-        CodeEdite,
-        MarkdownBody
-    },
     data() {
         return {
             textdata: data,
@@ -77,6 +73,10 @@ export default Vue.extend({
                 title:'观察者模式'
             }
         }
+    },
+    components: {
+        CodeEdite,
+        MarkdownBody
     },
     methods: {
         giveToHang() {

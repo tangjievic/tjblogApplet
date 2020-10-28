@@ -1,4 +1,4 @@
-const data = [];
+const data:string[] = [];
 data[0] = `<h2><a id="_0"></a>观察者模式</h2>
 <h3><a id="1__1"></a>1. 简单描述</h3>
 <h4><a id="11__2"></a>1.1 适用场景</h4>

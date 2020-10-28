@@ -1,4 +1,4 @@
-const data = [];
+const data:string[] = [];
 data[0]=`<h2><a id="VUE2_0"></a>VUE2基本储备</h2>
 <h3><a id="1_1"></a>1.模板语法</h3>
 <ul>

@@ -22,6 +22,21 @@ const routes = [
     name:'vue2base',
     component:() =>import('../views/vue2/VuetBase.vue')
   },
+  {
+    path: '/vue2base2',
+    name: 'vue2base2',
+    component:() => import('../views/vue2/vuebase2.vue')
+  },
+  {
+    path: '/vue2base4',
+    name: 'vue2base4',
+    component:() => import('../views/vue2/vuebase4.vue')
+  },
+  {
+    path: '/vue2base6',
+    name: 'vue2base6',
+    component:() => import('../views/vue2/vuebase6.vue')
+  },
   //css基础路由
   {
     path:'/cssbase1',
