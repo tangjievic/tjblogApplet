@@ -1,7 +1,7 @@
 <template>
-	<code-edite moduletitle="关于Vue2的基础点" :selectmenu="vue2base" :menuarray="menudata">
-		<markdown-body></markdown-body>
-	</code-edite>
+<code-edite moduletitle="css3体系重建" :selectmenu="selectmenu" :menuarray="menudata">
+    <markdown-body :htmlstirng="textdata[0]"></markdown-body>
+</code-edite>
 </template>
 
 <script lang="ts">
@@ -18,18 +18,18 @@ export default Vue.extend({
     data() {
         return {
             textdata: data,
-			menudata: Menudata,
-			vue2base:{
-				name:"vue2base",
-				title:"vue2基本储备"
-			}
+            menudata: Menudata,
+            selectmenu: {
+                name: 'cssbase1',
+                title: "流、元素与基本尺寸",
+            },
         }
     },
     methods: {
 
     },
     mounted() {
-
+        //console.log(this.textdata[0])
     }
 })
 </script>

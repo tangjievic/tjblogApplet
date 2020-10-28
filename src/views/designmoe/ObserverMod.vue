@@ -89,6 +89,8 @@ export default Vue.extend({
     mounted() {
         //这里是模拟数据vue数据响应式
         //这里测试的时候 test是要具有test属性的
+		let a
+
         const test = {};
         const defineReactive = (obj: object, key: string | number, val: any) => {
             //对传入的object进行访问拦截

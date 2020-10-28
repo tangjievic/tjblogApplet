@@ -1,6 +1,6 @@
 <template>
-<code-edite moduletitle="关于Vue2的基础点" :selectmenu="vue2base" :menuarray="menudata">
-    <markdown-body></markdown-body>
+<code-edite moduletitle="css3体系重建" :selectmenu="selectmenu" :menuarray="menudata">
+    <markdown-body :htmlstirng="textdata[0]"></markdown-body>
 </code-edite>
 </template>
 
@@ -8,7 +8,7 @@
 import Vue from 'vue'
 import CodeEdite from '../../layout/CodeEdite.vue';
 import MarkdownBody from '../../components/MarkdownBody.vue';
-import data from '../../markdownts/vue2/vue2base';
+import data from '../../markdownts/css3/cssbase8';
 import Menudata from './menudata';
 export default Vue.extend({
     components: {
@@ -19,10 +19,10 @@ export default Vue.extend({
         return {
             textdata: data,
             menudata: Menudata,
-            vue2base: {
-                name: "vue2base",
-                title: "vue2基本储备"
-            }
+            selectmenu: {
+                name: 'cssbase8',
+                title: "要点补充",
+            },
         }
     },
     methods: {

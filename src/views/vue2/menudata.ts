@@ -4,6 +4,46 @@ const menu :MenuItem[]= [
 		title:"vue2基本储备",
 		icon:' ri-spy-line'
 	},
+	{
+		name:'vue2source',
+		title:"vue2的TS储备",
+		icon:'ri-sd-card-line'
+	},
+	{
+		name:'vue2source',
+		title:"vue2全家桶",
+		icon:'ri-u-disk-fill'
+	},
+	{
+		name:'vue2source',
+		title:"vue2基本原理",
+		icon:'ri-terminal-window-fill'
+	},
+	{
+		name:'vue2source',
+		title:"vue2源码分析（1）",
+		icon:'ri-git-repository-line'
+	},
+	{
+		name:'vue2source',
+		title:"vue2源码分析（2）",
+		icon:'ri-git-repository-line'
+	},
+	{
+		name:'vue2source',
+		title:"vue2源码分析（3）",
+		icon:'ri-git-repository-line'
+	},
+	{
+		name:'vue2source',
+		title:"vue2的SSR",
+		icon:'ri-tv-2-line'
+	},
+	{
+		name:'vue2source',
+		title:"Vue2项目最佳实践",
+		icon:'ri-cpu-fill'
+	},
 ]
 
 export default menu

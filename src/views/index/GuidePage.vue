@@ -25,7 +25,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <a class="card-body" @click="goPage('obmod')">
+                <a href="javascript:;" class="card-body" @click="goPage('cssbase1')">
                     <div class="media">
                         <div class="media-body overflow-hidden">
                             <p class="text-truncate font-size-14 mb-2">css3</p>
@@ -46,7 +46,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <a class="card-body" @click="goPage('vue2base')">
+                <a href="javascript:;" class="card-body" @click="goPage('vue2base')">
                     <div class="media">
                         <div class="media-body overflow-hidden">
                             <p class="text-truncate font-size-14 mb-2">Vue2稳固</p>
@@ -67,7 +67,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <a class="card-body">
+                <a href="javascript:;" class="card-body" @click="goPage('algbase1')">
                     <div class="media">
                         <div class="media-body overflow-hidden">
                             <p class="text-truncate font-size-14 mb-2">算法</p>
@@ -93,27 +93,6 @@
                         <div class="media-body overflow-hidden">
                             <p class="text-truncate font-size-14 mb-2">html5</p>
                             <h4 class="mb-0">HTML5体系重建</h4>
-                        </div>
-                        <div class="text-primary">
-                            <i class="ri-terminal-box-line font-size-24"></i>
-                        </div>
-                    </div>
-                </a>
-                <div class="card-body border-top py-3">
-                    <div class="text-truncate">
-                        <span class="badge badge-soft-success font-size-11">0% </span>
-                        <span class="text-muted ml-2">未更新</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <a class="card-body">
-                    <div class="media">
-                        <div class="media-body overflow-hidden">
-                            <p class="text-truncate font-size-14 mb-2">vue2</p>
-                            <h4 class="mb-0">vue2的SSR</h4>
                         </div>
                         <div class="text-primary">
                             <i class="ri-terminal-box-line font-size-24"></i>
@@ -275,6 +254,27 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a class="card-body">
+                    <div class="media">
+                        <div class="media-body overflow-hidden">
+                            <p class="text-truncate font-size-14 mb-2">计算机基础</p>
+                            <h4 class="mb-0">前端所需的计算机网络基础</h4>
+                        </div>
+                        <div class="text-primary">
+                            <i class="ri-terminal-box-line font-size-24"></i>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-body border-top py-3">
+                    <div class="text-truncate">
+                        <span class="badge badge-soft-success font-size-11">0% </span>
+                        <span class="text-muted ml-2">未更新</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer" style="left: 0;position:fixed">
         <div class="container-fluid">
@@ -315,10 +315,11 @@ a.card-body:hover {
 
 .guidepage {
     padding: 0 15px;
-    &::after{
-    content: '';
-    display: block;
-    height: 70px;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 70px;
     }
 }
 </style>

@@ -12,7 +12,7 @@
                     <li class="menu-title">{{moduletitle}}</li>
 
                     <li v-for="(item,index) in menuarray" :key="index" :class="[item.name===selectmenu.name?'mm-active':'']">
-                        <a href="index.html" :class="['waves-effect',item.name===selectmenu.name?'active':'']">
+                        <a href="javascript:;" :class="['waves-effect',item.name===selectmenu.name?'active':'']" @click="goPage(item.name)">
                             <i :class="item.icon"></i>
                             <span>{{item.title}}</span>
                         </a>
@@ -79,6 +79,11 @@ export default Vue.extend({
         goGuidPage() {
             this.$router.push({
                 name: 'home'
+            })
+        },
+        goPage(name) {
+            this.$router.push({
+                name: name
             })
         }
     },

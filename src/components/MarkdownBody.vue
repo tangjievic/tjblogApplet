@@ -12,6 +12,10 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+.article.markdown-body {
+    margin-bottom: 10px;
+}
+
 .hljs-comment {
     color: #2bb9ad !important;
     font-style: normal !important;

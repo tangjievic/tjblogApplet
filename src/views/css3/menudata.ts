@@ -1,64 +1,44 @@
 
 const menu :MenuItem[]= [
 	{
-		name:'obmod',
-		title:"观察者模式",
-		icon:'ri-bubble-chart-line'
+		name:'cssbase1',
+		title:"流、元素与基本尺寸",
+		icon:'ri-inbox-line'
 	},
 	{
-		name:"submod",
-		title:'发布订阅模式',
-		icon:'ri-inbox-archive-fill'
+		name:"cssbase2",
+		title:'盒子尺寸',
+		icon:'ri-archive-line'
 	},
 	{
-		name:"submod",
-		title:'工厂模式',
-		icon:'ri-printer-fill'
+		name:"cssbase3",
+		title:'内联元素和流',
+		icon:'ri-contrast-drop-line'
 	},
 	{
-		name:"submod",
-		title:'单列模式',
-		icon:'ri-focus-2-fill'
+		name:"cssbase4",
+		title:'流的破坏和保护',
+		icon:'ri-honour-fill'
 	},
 	{
-		name:"submod",
-		title:'适配器模式',
-		icon:'ri-shape-2-fill'
+		name:"cssbase5",
+		title:'css的层级规则',
+		icon:'ri-creative-commons-fill'
 	},
 	{
-		name:"submod",
-		title:'装饰器模式',
-		icon:'ri-magic-fill'
+		name:"cssbase6",
+		title:'文本处理',
+		icon:'ri-creative-commons-nd-line'
 	},
 	{
-		name:"submod",
-		title:'代理模式',
-		icon:'ri-bug-2-fill'
+		name:"cssbase7",
+		title:'其他',
+		icon:'ri-brush-3-fill'
 	},
 	{
-		name:"submod",
-		title:'外观模式',
-		icon:'ri-command-fill'
-	},
-	{
-		name:"submod",
-		title:'迭代器模式',
-		icon:'ri-donut-chart-line'
-	},
-	{
-		name:"submod",
-		title:'建造者模式',
-		icon:'ri-bar-chart-2-fill'
-	},
-	{
-		name:"submod",
-		title:'责任链模式',
-		icon:'ri-git-pull-request-fill'
-	},
-	{
-		name:"submod",
-		title:'命令模式',
-		icon:' ri-git-repository-commits-line'
+		name:"cssbase8",
+		title:'要点补充',
+		icon:'ri-pencil-ruler-2-line'
 	}
 ]
 

@@ -1,4 +1,3 @@
-
 const menu :MenuItem[]= [
 	{
 		name:'obmod',
