@@ -54,6 +54,11 @@ const routes = [
     name:'algbase1',
     component:() =>import('../views/alg/algBase1.vue')
   },
+  {
+    path:'/algbase2',
+    name:'algbase2',
+    component:() =>import('../views/alg/algbase2.vue')
+  },
   //安全
   {
     path:'/salfbase1'
@@ -65,6 +70,12 @@ const routes = [
   //计算机网络
   {
     path:'netbase1'
+  },
+  //前端优化
+  {
+    path:'/optbase1',
+    name:'optbase1',
+    component:()=>import ('../views/opt/optbase1.vue')
   }
 ]
 

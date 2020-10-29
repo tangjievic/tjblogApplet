@@ -17,6 +17,11 @@ const menu :MenuItem[]= [
     },
     {
         name:'algbase4',
+        title:'JS字符串',
+        icon:'ri-terminal-fill'
+    },
+    {
+        name:'algbase4',
         title:'JS数组',
         icon:' ri-ruler-line'
     },

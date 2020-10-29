@@ -90,6 +90,7 @@ export default Vue.extend({
     mounted() {
         const $ = window.$;
         $("#side-menu").metisMenu();
+        console.log(this.selectmenu)
     }
 })
 </script>

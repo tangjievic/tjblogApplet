@@ -11,8 +11,8 @@ const menu :MenuItem[]= [
 	},
 	{
 		name:'vue2base3',
-		title:"vue2全家桶",
-		icon:'ri-u-disk-fill'
+		title:"vue2组件开发",
+		icon:'ri-terminal-window-line'
 	},
 	{
 		name:'vue2base4',
