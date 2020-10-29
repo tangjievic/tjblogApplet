@@ -130,7 +130,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <a class="card-body">
+                <a class="card-body" @click="goPage('node1')">
                     <div class="media">
                         <div class="media-body overflow-hidden">
                             <p class="text-truncate font-size-14 mb-2">JS</p>

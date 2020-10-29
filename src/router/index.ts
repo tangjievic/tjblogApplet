@@ -76,6 +76,12 @@ const routes = [
     path:'/optbase1',
     name:'optbase1',
     component:()=>import ('../views/opt/optbase1.vue')
+  },
+  //node
+  {
+    path:"/node1",
+    name:'node1',
+    component:() =>import('../views/node/node1.vue')
   }
 ]
 
