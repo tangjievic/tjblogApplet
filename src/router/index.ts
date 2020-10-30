@@ -44,6 +44,11 @@ const routes = [
     component:() =>import('../views/css3/cssBase1.vue')
   },
   {
+    path:'/cssbase7',
+    name:'cssbase7',
+    component:() =>import('../views/css3/cssBase7.vue')
+  },
+  {
     path:'/cssbase8',
     name:'cssbase8',
     component:() =>import('../views/css3/cssBase8.vue')
@@ -76,6 +81,16 @@ const routes = [
     path:'/optbase1',
     name:'optbase1',
     component:()=>import ('../views/opt/optbase1.vue')
+  },
+  {
+    path:'/optbase2',
+    name:'optbase2',
+    component:()=>import ('../views/opt/optbase2.vue')
+  },
+  {
+    path:'/optbase3',
+    name:'optbase3',
+    component:()=>import('../views/opt/optbase3.vue')
   },
   //node
   {

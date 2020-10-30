@@ -13,27 +13,27 @@ const menu :MenuItem[]= [
 	{
 		name:'optbase3',
 		title:"代码优化",
-		icon:'ri-strikethrough'
+		icon:'ri-code-box-fill'
 	},
 	{
-		name:'optbase3',
+		name:'optbase4',
 		title:"资源优化",
-		icon:'ri-strikethrough'
+		icon:'ri-computer-fill'
 	},
 	{
-		name:'optbase3',
+		name:'optbase5',
 		title:"构建优化",
-		icon:'ri-strikethrough'
+		icon:'ri-device-fill'
 	},
 	{
-		name:'optbase3',
+		name:'optbase6',
 		title:"最佳实践",
-		icon:'ri-strikethrough'
+		icon:'ri-server-fill'
 	},
 	{
-		name:'optbase3',
+		name:'optbase7',
 		title:"其他补充",
-		icon:'ri-strikethrough'
+		icon:'ri-hard-drive-line'
 	},
 ]
 

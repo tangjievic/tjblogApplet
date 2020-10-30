@@ -38,6 +38,23 @@ L:加载， 5s内完成加载并可交互</p>
 </ul>
 `
 data[1] =`<h4><a id="32_api_0"></a>3.2 基本性能测试api</h4>
+<ul>
+<li>
+<ol>
+<li>关键时间节点（可交互时间）</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>网络状态</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>客户端服务端协商&amp;网页显示状态</li>
+</ol>
+</li>
+</ul>
 <p>第一个：观察长任务</p>
 <pre><div class="hljs"><code class="lang-typescript"><span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> PerformanceObserver(<span class="hljs-function">(<span class="hljs-params">list</span>) =&gt;</span> {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> entry of list.getEntries()) {
