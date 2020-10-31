@@ -256,7 +256,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <a class="card-body">
+                <a class="card-body" @click="goPage('netbase1')">
                     <div class="media">
                         <div class="media-body overflow-hidden">
                             <p class="text-truncate font-size-14 mb-2">计算机基础</p>
@@ -315,7 +315,6 @@ a.card-body:hover {
 
 .guidepage {
     padding: 0 15px;
-
     &::after {
         content: '';
         display: block;

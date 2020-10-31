@@ -12,7 +12,7 @@ data[0] =`<h2><a id="_0"></a>代码优化</h2>
 </code></div></pre>
 <pre><code class="lang-typscript">//模拟首页资源加载完毕
 setTimeout(() =&gt; {
-    this.$refs.layzIframe.setAttribute('src', &quot;https://tangjietop.cn&quot;)
+    (this.$refs.layzIframe as Element).setAttribute('src', "https://tangjietop.cn")
 }, 5000)
 </code></pre><p>效果如下：</p>`
 
@@ -38,7 +38,7 @@ data[1]=`<h3><a id="6_18"></a>6.避免节点深层嵌套</h3>
 <p><strong>屏幕外的内容</strong><br />
 如果你有一个导航栏或其它类似的东西并不在屏幕可现实范围内出现，浏览器同样会为这些不可见的元素进行渲染。通过使用 contain: paint; 浏览器就会忽略渲染这些屏幕外不可见的元素，从而能更快的渲染其它内容。</p>
 <p><strong>计算容器尺寸</strong><br />
-我在文字开头提到过这个问题，使用 contain: strict; 可以 免去很多关于容器尺寸控制的问题。比如，子元素的内容会影响容器的大小，使用 contain 属性就可以避免这样的问题产生。</p>
+使用 contain: strict; 可以免去很多关于容器尺寸控制的问题。比如，子元素的内容会影响容器的大小，使用 contain 属性就可以避免这样的问题产生。</p>
 `
 
 export default data

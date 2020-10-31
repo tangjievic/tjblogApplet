@@ -1,15 +1,14 @@
 <template>
-	<code-edite moduletitle="关于Vue2的基础点" :selectmenu="vue2base" :menuarray="menudata">
-		<markdown-body></markdown-body>
-        
-	</code-edite>
+<code-edite moduletitle="前端性能优化" :selectmenu="selectmenu" :menuarray="menudata">
+    <markdown-body :htmlstirng="textdata[0]"></markdown-body>
+</code-edite>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import CodeEdite from '../../layout/CodeEdite.vue';
 import MarkdownBody from '../../components/MarkdownBody.vue';
-import data from '../../markdownts/vue2/vue2base6';
+import data from '../../markdownts/opt/optbase6';
 import Menudata from './menudata';
 export default Vue.extend({
     components: {
@@ -19,18 +18,12 @@ export default Vue.extend({
     data() {
         return {
             textdata: data,
-			menudata: Menudata,
-			vue2base:{
-				name:"vue2base6",
-				title:"vue2源码分析（1）"
-			}
+            menudata: Menudata,
+            selectmenu: {
+                name: 'optbase6',
+                title: "最佳实践",
+            },
         }
-    },
-    methods: {
-
-    },
-    mounted() {
-
     }
 })
 </script>

@@ -30,11 +30,11 @@ const menu :MenuItem[]= [
 		title:"最佳实践",
 		icon:'ri-server-fill'
 	},
-	{
-		name:'optbase7',
-		title:"其他补充",
-		icon:'ri-hard-drive-line'
-	},
+	// {
+	// 	name:'optbase7',
+	// 	title:"其他补充",
+	// 	icon:'ri-hard-drive-line'
+	// },
 ]
 
 export default menu

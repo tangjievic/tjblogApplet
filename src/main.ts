@@ -6,7 +6,7 @@ import './assets/css/bootstrap.min.css';
 import './assets/css/icons.min.css';
 import './assets/css/app.css';
 import {Button,Input,Form, Menu,Layout,Icon,message,Tabs,Select,Modal,
-Breadcrumb,Table,Alert,Popconfirm,Radio,Row,Col,Divider} from 'ant-design-vue'
+Breadcrumb,Table,Alert,Popconfirm,Radio,Row,Col,Divider} from 'ant-design-vue';
 
 Vue.use(Form);
 Vue.use(Menu);
@@ -26,7 +26,6 @@ Vue.component(Button.name,Button);
 Vue.component(Alert.name,Alert);
 Vue.component(Icon.name,Icon);
 Vue.prototype.$message = message;
-
 Vue.config.productionTip = false
 
 new Vue({

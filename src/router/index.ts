@@ -74,7 +74,14 @@ const routes = [
   },
   //计算机网络
   {
-    path:'netbase1'
+    path:'netbase1',
+    name:'netbase1',
+    component:()=>import ('../views/net/netbase1.vue')
+  },
+  {
+    path:'netbase2',
+    name:'netbase2',
+    component:()=>import ('../views/net/netbase2.vue')
   },
   //前端优化
   {
@@ -91,6 +98,21 @@ const routes = [
     path:'/optbase3',
     name:'optbase3',
     component:()=>import('../views/opt/optbase3.vue')
+  },
+  {
+    path:'/optbase4',
+    name:'optbase4',
+    component:()=>import('../views/opt/optbase4.vue')
+  },
+  {
+    path:'/optbase5',
+    name:'optbase5',
+    component:()=>import('../views/opt/optbase5.vue')
+  },
+  {
+    path:'/optbase6',
+    name:'optbase6',
+    component:()=>import('../views/opt/optbase6.vue')
   },
   //node
   {

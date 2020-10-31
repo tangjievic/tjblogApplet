@@ -37,6 +37,7 @@
     "tests/**/*.tsx", "src/views/loginpage/index.js", "src/views/loginpage/index.js"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "tests"
   ]  
 }
