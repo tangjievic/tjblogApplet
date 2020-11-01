@@ -1,7 +1,7 @@
 <template>
 <code-edite moduletitle="前端性能优化" :selectmenu="selectmenu" :menuarray="menudata">
     <markdown-body :htmlstirng="textdata[0]"></markdown-body>
-    <iframe ref="layzIframe" height="500px" width="100%"></iframe>
+    <!-- <iframe ref="layzIframe" height="500px" width="100%"></iframe> -->
     <markdown-body :htmlstirng="textdata[1]"></markdown-body>
 </code-edite>
 </template>
@@ -28,11 +28,11 @@ export default Vue.extend({
         }
     },
     methods: {},
-    mounted() {
-        setTimeout(() => {
-            (this.$refs.layzIframe as Element).setAttribute('src', "https://tangjietop.cn")
-        }, 5000)
-    }
+    // mounted() {
+    //     setTimeout(() => {
+    //         (this.$refs.layzIframe as Element).setAttribute('src', "https://tangjietop.cn")
+    //     }, 5000)
+    // }
 })
 </script>
 
