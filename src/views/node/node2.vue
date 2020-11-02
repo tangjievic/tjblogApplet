@@ -9,7 +9,7 @@
 import Vue from 'vue'
 import CodeEdite from '../../layout/CodeEdite.vue';
 import MarkdownBody from '../../components/MarkdownBody.vue';
-import data from '../../markdownts/node/node1';
+import data from '../../markdownts/node/node2';
 import Menudata from './menudata';
 export default Vue.extend({
     components: {
@@ -22,7 +22,7 @@ export default Vue.extend({
             menudata: Menudata,
             vue2base: {
                 name: "node1",
-                title: "node基础"
+                title: "koa"
             }
         }
     },

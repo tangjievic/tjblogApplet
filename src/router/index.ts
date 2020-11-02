@@ -119,7 +119,12 @@ const routes = [
     path:"/node1",
     name:'node1',
     component:() =>import('../views/node/node1.vue')
-  }
+  },
+  {
+    path:"/node2",
+    name:'node2',
+    component:() =>import('../views/node/node2.vue')
+  },
 ]
 
 const router = new VueRouter({

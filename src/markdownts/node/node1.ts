@@ -58,5 +58,49 @@ fs.read 和fs.readFile的不同之处在于可以这么理解，fs.readFile就�
 </li>
 </ul>`
 
+data[1] = `<h3><a id="2Http_0"></a>2.Http服务</h3>
+<p>如下就是创建一个简单的http服务器</p>
+<pre><div class="hljs"><code class="lang-javascript"><span class="hljs-comment">// 创建http服务</span>
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">const</span> server = http.createServer(<span class="hljs-function">(<span class="hljs-params">request,response</span>)=&gt;</span>{
+	<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'response'</span>)
+	response.end(<span class="hljs-string">'this is a responses'</span>)
+})
+
+server.listen(<span class="hljs-number">4000</span>)
+</code></div></pre>
+<p>创建一个基本的首页</p>
+<pre><div class="hljs"><code class="lang-javascript"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> server = http.createServer(<span class="hljs-function">(<span class="hljs-params">request,response</span>)=&gt;</span>{
+	<span class="hljs-keyword">const</span> { url,method } = request;
+	<span class="hljs-keyword">if</span>(url === <span class="hljs-string">'/'</span> &amp;&amp; method === <span class="hljs-string">'GET'</span>){
+		fs.readFile(<span class="hljs-string">'index.html'</span>,(err,data)=&gt;{
+			<span class="hljs-keyword">if</span>(err){
+				response.writeHead(<span class="hljs-number">500</span>,{
+					<span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'text/plain;charset=urf-8'</span>
+				});
+				response.end();
+				<span class="hljs-keyword">return</span>
+			}
+			response.statusCode = <span class="hljs-number">200</span>;
+			response.setHeader(<span class="hljs-string">'Content-Type'</span>,<span class="hljs-string">'text/html'</span>);
+			response.end(data)
+		})
+	}<span class="hljs-keyword">else</span>{
+		response.statusCode = <span class="hljs-string">'404'</span>;
+		response.setHeader(<span class="hljs-string">'Content-Type'</span>,<span class="hljs-string">'text/plain;charset=utf-8'</span>);
+		response.end(<span class="hljs-string">'404'</span>,<span class="hljs-string">'页面丢失'</span>)
+	}
+})
+
+server.listen(<span class="hljs-number">4000</span>)
+</code></div></pre>
+<h4><a id="21responsesetHeaderresponsewriteHead_40"></a>2.1关于response.setHeader和response.writeHead的区别：</h4>
+<p>response.setHeader：只允许设置单一标题<br />
+esponse.writeHead：将允许您设置几乎所有关于响应头的内容，包括状态代码、内容和多个头。</p>
+<h4><a id="22_Stream__43"></a>2.2 Stream 流</h4>
+<p>stream是用来与node流数据交互的接口，如果有了解gulp的同学，node的流其实和gulp的流差不多，而且这个两个的流都有pipe（管道）方法</p>`
+
 
 export default data
