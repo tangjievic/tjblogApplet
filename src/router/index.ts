@@ -125,6 +125,17 @@ const routes = [
     name:'node2',
     component:() =>import('../views/node/node2.vue')
   },
+  //react
+  {
+    path:'/react1',
+    name:'react1',
+    component:() =>import('../views/react/react1.vue')
+  },
+  {
+    path:'/react2',
+    name:'react2',
+    component:() =>import('../views/react/react2.vue')
+  }
 ]
 
 const router = new VueRouter({
