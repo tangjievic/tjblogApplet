@@ -66,7 +66,9 @@ const routes = [
   },
   //安全
   {
-    path:'/salfbase1'
+    path:'/safebase1',
+    name:'safebase1',
+    component:() =>import('../views/safe/safebase1.vue')
   },
   //自动化测试
   {
