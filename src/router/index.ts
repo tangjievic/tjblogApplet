@@ -76,7 +76,9 @@ const routes = [
   },
   //安全
   {
-    path:'/salfbase1'
+    path:'/safebase1',
+    name:'safebase1',
+    component:() =>import('../views/safe/safebase1.vue')
   },
   //自动化测试
   {
@@ -129,6 +131,22 @@ const routes = [
     path:"/node1",
     name:'node1',
     component:() =>import('../views/node/node1.vue')
+  },
+  {
+    path:"/node2",
+    name:'node2',
+    component:() =>import('../views/node/node2.vue')
+  },
+  //react
+  {
+    path:'/react1',
+    name:'react1',
+    component:() =>import('../views/react/react1.vue')
+  },
+  {
+    path:'/react2',
+    name:'react2',
+    component:() =>import('../views/react/react2.vue')
   }
 ]
 
