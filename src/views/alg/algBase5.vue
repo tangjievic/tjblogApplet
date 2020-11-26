@@ -30,6 +30,9 @@ export default Vue.extend({
     },
     mounted() {
         //console.log(this.textdata[0])
+        const a = [1,2,3,4,'test']
+
+
     }
 })
 </script>
