@@ -28,6 +28,11 @@ const routes = [
     component:() => import('../views/vue2/vuebase2.vue')
   },
   {
+    path:"/vue2base3",
+    name: 'vue2base3',
+    component:()=> import('../views/vue2/vuebase3.vue')
+  },
+  {
     path: '/vue2base4',
     name: 'vue2base4',
     component:() => import('../views/vue2/vuebase4.vue')
@@ -63,6 +68,11 @@ const routes = [
     path:'/algbase2',
     name:'algbase2',
     component:() =>import('../views/alg/algbase2.vue')
+  },
+  {
+    path:'/algbase5',
+    name:'algbase5',
+    component:() =>import('../views/alg/algBase5.vue')
   },
   //安全
   {

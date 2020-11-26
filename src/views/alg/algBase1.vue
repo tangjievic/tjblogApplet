@@ -51,7 +51,7 @@ export default Vue.extend({
     },
     mounted() {
         const enuResult = this.enumeration(this.nums, this.target);
-        console.log(enuResult)
+        // console.log(enuResult)
     }
 })
 </script>

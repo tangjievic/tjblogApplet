@@ -44,7 +44,7 @@ export default Vue.extend({
                 result = num12[(num12.length + 1) / 2 - 1];
             }
             //输出中中位数
-            console.log(result)
+            // console.log(result)
             return result
         }
         findMedianSortedArrays([1, 1], [1, 2])

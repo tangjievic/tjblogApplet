@@ -99,7 +99,7 @@ export default Vue.extend({
     cursor: pointer;
 
     &:hover {
-        color: #2bb9ad;
+        color: #55b9f3;
     }
 
     &.active {

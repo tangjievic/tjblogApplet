@@ -21,7 +21,7 @@ const menu :MenuItem[]= [
         icon:'ri-terminal-fill'
     },
     {
-        name:'algbase4',
+        name:'algbase5',
         title:'JS数组',
         icon:' ri-ruler-line'
     },

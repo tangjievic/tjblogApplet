@@ -8,7 +8,7 @@
 }
 
 .logo.logo-dark {
-    color: #2bb9ad;
+    color: #55b9f3;
     font-size: 22px;
 }
 
@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    border-top: 4px solid #2bb9ad;
+    border-top: 4px solid #55b9f3;
 }
 
 @media screen and (max-width: 960px) {
@@ -102,21 +102,6 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="dropdown d-inline-block user-dropdown">
-                    <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="d-xl-inline-block ml-1 eader-profile-user">用户名</span>
-                        <i class="mdi mdi-chevron-down d-xl-inline-block"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- item-->
-                        <a class="dropdown-item" href="#"><i class="ri-user-line align-middle mr-1"></i> 申请vip</a>
-                        <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle mr-1"></i> 我的积分</a>
-                        <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle mr-1"></i> 设置</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle mr-1 text-danger"></i> 退出登录</a>
                     </div>
                 </div>
             </div>
