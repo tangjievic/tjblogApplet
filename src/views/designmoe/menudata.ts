@@ -40,7 +40,7 @@ const menu :MenuItem[]= [
 		icon:'ri-command-fill'
 	},
 	{
-		name:"submod",
+		name:"designmoe9",
 		title:'迭代器模式',
 		icon:'ri-donut-chart-line'
 	},

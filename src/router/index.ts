@@ -16,6 +16,11 @@ const routes = [
     name: 'obmod',
     component:() => import('../views/designmoe/ObserverMod.vue')
   },
+  {
+    path: '/designmoe9',
+    name: 'designmoe9',
+    component:() => import('../views/designmoe/designmoe9.vue')
+  },
   //vue2基础路由
   {
     path:"/vue2base",
