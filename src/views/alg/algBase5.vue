@@ -30,9 +30,12 @@ export default Vue.extend({
     },
     mounted() {
         //console.log(this.textdata[0])
-        const a = [1,2,3,4,'test']
-
-
+        //const a = [1,2,3,4,'test']
+        const test = [1,2,3,4];
+        let sum = test.reduce((pre,next)=>{
+            return pre + next
+        })
+        console.log(sum)
     }
 })
 </script>
